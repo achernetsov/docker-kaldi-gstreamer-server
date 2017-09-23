@@ -1,7 +1,7 @@
-FROM debian:8
-MAINTAINER Eduardo Silva <zedudu@gmail.com>
+FROM ubuntu:16.04
+MAINTAINER Artyom Chernetsov <chernetsov.artyom@gmail.com>
 
-RUN apt-get update && apt-get install -y  \
+RUN apt-get update && apt-get install -y  \ 
     autoconf \
     automake \
     bzip2 \
@@ -16,8 +16,10 @@ RUN apt-get update && apt-get install -y  \
     libatlas3-base \
     libgstreamer1.0-dev \
     libtool-bin \
+    #libtool
     make \
     python2.7 \
+    python3 \
     python-pip \
     python-yaml \
     python-simplejson \
